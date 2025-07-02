@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+
+        <title>Skribbl Word Search</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="main-container">
+            <h1 id="title">Skribbl Word Search</h1>
+
+            <div id="top-area">
+                <div id="word-length">
+                    <label for="letter-count">Number of Letters: </label>
+                    <input type="number" id="letter-count" name="letter-count" onchange="update_input()">
+                </div>
+            </div>
+
+            <div id="input"></div>
+
+            <div id="answer-table" hidden>
+                <table>
+                    <tr id="answer-list"></tr>
+                </table>
+            </div>
+
+            <div id="no-answer-screen" hidden>
+                <p id="no-answer">Unable to find any answers :(</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
