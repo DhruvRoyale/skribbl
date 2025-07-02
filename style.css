@@ -22,6 +22,11 @@ h1 {
 
 #letter-count {
     width: 45px;
+    text-align: center;
+}
+
+#input {
+    margin-top: 20px;
 }
 
 .input-letter, .input-letter-empty {
@@ -32,8 +37,9 @@ h1 {
     border-right: none;
     border-left: none;
     margin: 0px 3px;
-    width: 20px;
+    width: 40px;
     outline: none;
+    border-radius: 0%;
 }
 
 .input-letter {
@@ -41,7 +47,7 @@ h1 {
 }
 
 .input-letter-empty {
-    border-bottom: 2px solid rgba(242, 242, 242, 0.2);
+    border-bottom: 2px solid rgba(242, 242, 242, 0.1);
 }
 
 #answer-table{
